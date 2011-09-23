@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Roman Numerals' target in the 'Roman Numerals' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

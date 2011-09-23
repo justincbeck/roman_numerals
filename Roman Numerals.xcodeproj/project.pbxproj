@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98641F32142D151700757E24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98641F31142D151700757E24 /* Cocoa.framework */; };
+		98641F3C142D151700757E24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98641F3A142D151700757E24 /* InfoPlist.strings */; };
+		98641F3E142D151700757E24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98641F3D142D151700757E24 /* main.m */; };
+		98641F42142D151700757E24 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 98641F40142D151700757E24 /* Credits.rtf */; };
+		98641F45142D151700757E24 /* Roman_NumeralsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98641F44142D151700757E24 /* Roman_NumeralsAppDelegate.m */; };
+		98641F48142D151700757E24 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98641F46142D151700757E24 /* MainMenu.xib */; };
+		98641F50142D151700757E24 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98641F4F142D151700757E24 /* SenTestingKit.framework */; };
+		98641F51142D151700757E24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98641F31142D151700757E24 /* Cocoa.framework */; };
+		98641F59142D151700757E24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98641F57142D151700757E24 /* InfoPlist.strings */; };
+		98641F5B142D151700757E24 /* Roman_NumeralsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 98641F5A142D151700757E24 /* Roman_NumeralsTests.h */; };
+		98641F5D142D151700757E24 /* Roman_NumeralsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98641F5C142D151700757E24 /* Roman_NumeralsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98641F52142D151700757E24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98641F24142D151700757E24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98641F2C142D151700757E24;
+			remoteInfo = "Roman Numerals";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98641F2D142D151700757E24 /* Roman Numerals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roman Numerals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98641F31142D151700757E24 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		98641F34142D151700757E24 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		98641F35142D151700757E24 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		98641F36142D151700757E24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		98641F39142D151700757E24 /* Roman Numerals-Info.plist */ = {isa = PBXFileReference; path = "Roman Numerals-Info.plist"; sourceTree = "<group>"; };
+		98641F3B142D151700757E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98641F3D142D151700757E24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98641F3F142D151700757E24 /* Roman Numerals-Prefix.pch */ = {isa = PBXFileReference; path = "Roman Numerals-Prefix.pch"; sourceTree = "<group>"; };
+		98641F41142D151700757E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		98641F43142D151700757E24 /* Roman_NumeralsAppDelegate.h */ = {isa = PBXFileReference; path = Roman_NumeralsAppDelegate.h; sourceTree = "<group>"; };
+		98641F44142D151700757E24 /* Roman_NumeralsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Roman_NumeralsAppDelegate.m; sourceTree = "<group>"; };
+		98641F47142D151700757E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		98641F4E142D151700757E24 /* Roman NumeralsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roman NumeralsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98641F4F142D151700757E24 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		98641F56142D151700757E24 /* Roman NumeralsTests-Info.plist */ = {isa = PBXFileReference; path = "Roman NumeralsTests-Info.plist"; sourceTree = "<group>"; };
+		98641F58142D151700757E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98641F5A142D151700757E24 /* Roman_NumeralsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Roman_NumeralsTests.h; sourceTree = "<group>"; };
+		98641F5C142D151700757E24 /* Roman_NumeralsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Roman_NumeralsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98641F2A142D151700757E24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98641F32142D151700757E24 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98641F4A142D151700757E24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98641F50142D151700757E24 /* SenTestingKit.framework in Frameworks */,
+				98641F51142D151700757E24 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98641F22142D151700757E24 = {
+			isa = PBXGroup;
+			children = (
+				98641F37142D151700757E24 /* Roman Numerals */,
+				98641F54142D151700757E24 /* Roman NumeralsTests */,
+				98641F30142D151700757E24 /* Frameworks */,
+				98641F2E142D151700757E24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98641F2E142D151700757E24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98641F2D142D151700757E24 /* Roman Numerals.app */,
+				98641F4E142D151700757E24 /* Roman NumeralsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98641F30142D151700757E24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98641F31142D151700757E24 /* Cocoa.framework */,
+				98641F4F142D151700757E24 /* SenTestingKit.framework */,
+				98641F33142D151700757E24 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98641F33142D151700757E24 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98641F34142D151700757E24 /* AppKit.framework */,
+				98641F35142D151700757E24 /* CoreData.framework */,
+				98641F36142D151700757E24 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		98641F37142D151700757E24 /* Roman Numerals */ = {
+			isa = PBXGroup;
+			children = (
+				98641F43142D151700757E24 /* Roman_NumeralsAppDelegate.h */,
+				98641F44142D151700757E24 /* Roman_NumeralsAppDelegate.m */,
+				98641F46142D151700757E24 /* MainMenu.xib */,
+				98641F38142D151700757E24 /* Supporting Files */,
+			);
+			path = "Roman Numerals";
+			sourceTree = "<group>";
+		};
+		98641F38142D151700757E24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98641F39142D151700757E24 /* Roman Numerals-Info.plist */,
+				98641F3A142D151700757E24 /* InfoPlist.strings */,
+				98641F3D142D151700757E24 /* main.m */,
+				98641F3F142D151700757E24 /* Roman Numerals-Prefix.pch */,
+				98641F40142D151700757E24 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98641F54142D151700757E24 /* Roman NumeralsTests */ = {
+			isa = PBXGroup;
+			children = (
+				98641F5A142D151700757E24 /* Roman_NumeralsTests.h */,
+				98641F5C142D151700757E24 /* Roman_NumeralsTests.m */,
+				98641F55142D151700757E24 /* Supporting Files */,
+			);
+			path = "Roman NumeralsTests";
+			sourceTree = "<group>";
+		};
+		98641F55142D151700757E24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98641F56142D151700757E24 /* Roman NumeralsTests-Info.plist */,
+				98641F57142D151700757E24 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98641F2C142D151700757E24 /* Roman Numerals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98641F60142D151700757E24 /* Build configuration list for PBXNativeTarget "Roman Numerals" */;
+			buildPhases = (
+				98641F29142D151700757E24 /* Sources */,
+				98641F2A142D151700757E24 /* Frameworks */,
+				98641F2B142D151700757E24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roman Numerals";
+			productName = "Roman Numerals";
+			productReference = 98641F2D142D151700757E24 /* Roman Numerals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98641F4D142D151700757E24 /* Roman NumeralsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98641F63142D151700757E24 /* Build configuration list for PBXNativeTarget "Roman NumeralsTests" */;
+			buildPhases = (
+				98641F49142D151700757E24 /* Sources */,
+				98641F4A142D151700757E24 /* Frameworks */,
+				98641F4B142D151700757E24 /* Resources */,
+				98641F4C142D151700757E24 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98641F53142D151700757E24 /* PBXTargetDependency */,
+			);
+			name = "Roman NumeralsTests";
+			productName = "Roman NumeralsTests";
+			productReference = 98641F4E142D151700757E24 /* Roman NumeralsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98641F24142D151700757E24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Intalgent;
+			};
+			buildConfigurationList = 98641F27142D151700757E24 /* Build configuration list for PBXProject "Roman Numerals" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 98641F22142D151700757E24;
+			productRefGroup = 98641F2E142D151700757E24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98641F2C142D151700757E24 /* Roman Numerals */,
+				98641F4D142D151700757E24 /* Roman NumeralsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98641F2B142D151700757E24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98641F3C142D151700757E24 /* InfoPlist.strings in Resources */,
+				98641F42142D151700757E24 /* Credits.rtf in Resources */,
+				98641F48142D151700757E24 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98641F4B142D151700757E24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98641F59142D151700757E24 /* InfoPlist.strings in Resources */,
+				98641F5B142D151700757E24 /* Roman_NumeralsTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98641F4C142D151700757E24 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98641F29142D151700757E24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98641F3E142D151700757E24 /* main.m in Sources */,
+				98641F45142D151700757E24 /* Roman_NumeralsAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98641F49142D151700757E24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98641F5D142D151700757E24 /* Roman_NumeralsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98641F53142D151700757E24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98641F2C142D151700757E24 /* Roman Numerals */;
+			targetProxy = 98641F52142D151700757E24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98641F3A142D151700757E24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98641F3B142D151700757E24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		98641F40142D151700757E24 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98641F41142D151700757E24 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		98641F46142D151700757E24 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98641F47142D151700757E24 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		98641F57142D151700757E24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98641F58142D151700757E24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98641F5E142D151700757E24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		98641F5F142D151700757E24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		98641F61142D151700757E24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Roman Numerals/Roman Numerals-Prefix.pch";
+				INFOPLIST_FILE = "Roman Numerals/Roman Numerals-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		98641F62142D151700757E24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Roman Numerals/Roman Numerals-Prefix.pch";
+				INFOPLIST_FILE = "Roman Numerals/Roman Numerals-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		98641F64142D151700757E24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Roman Numerals.app/Contents/MacOS/Roman Numerals";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Roman Numerals/Roman Numerals-Prefix.pch";
+				INFOPLIST_FILE = "Roman NumeralsTests/Roman NumeralsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		98641F65142D151700757E24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Roman Numerals.app/Contents/MacOS/Roman Numerals";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Roman Numerals/Roman Numerals-Prefix.pch";
+				INFOPLIST_FILE = "Roman NumeralsTests/Roman NumeralsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98641F27142D151700757E24 /* Build configuration list for PBXProject "Roman Numerals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98641F5E142D151700757E24 /* Debug */,
+				98641F5F142D151700757E24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98641F60142D151700757E24 /* Build configuration list for PBXNativeTarget "Roman Numerals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98641F61142D151700757E24 /* Debug */,
+				98641F62142D151700757E24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		98641F63142D151700757E24 /* Build configuration list for PBXNativeTarget "Roman NumeralsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98641F64142D151700757E24 /* Debug */,
+				98641F65142D151700757E24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98641F24142D151700757E24 /* Project object */;
+}
