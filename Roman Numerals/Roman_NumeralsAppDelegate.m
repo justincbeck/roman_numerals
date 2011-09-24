@@ -36,9 +36,9 @@ const static NSDictionary *THE_MAP;
 - (IBAction)buttonPressed:(id)sender
 {
     NSString *arabic = [self convert:(NSString *) @"MCMLXXII"];
-    NSLog(@"%@", arabic);
+    NSLog(@"%@", arabic); // Should be 1972
     NSString *roman = [self convert:(NSString *) @"1972"];
-    NSLog(@"%@", roman);
+    NSLog(@"%@", roman); // Should be MCMLXXII
 
     [result setStringValue:roman];
 }
