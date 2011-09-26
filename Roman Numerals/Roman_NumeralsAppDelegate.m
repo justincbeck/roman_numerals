@@ -12,6 +12,7 @@
 
 @synthesize window;
 @synthesize result;
+@synthesize origin;
 
 const static NSString *ONE[3] = {@"I", @"V", @"X"};
 const static NSString *TEN[3] = {@"X", @"L", @"C"};
@@ -35,12 +36,10 @@ const static NSDictionary *THE_MAP;
 
 - (IBAction)buttonPressed:(id)sender
 {
-    NSString *arabic = [self convert:(NSString *) @"MCMLXXII"];
-    NSLog(@"%ld", [arabic integerValue]);
-    NSString *roman = [self convert:(NSString *) @"1972"];
-    NSLog(@"%@", roman); // Should be MCMLXXII but is MMCXXLLII
+    NSString *candidate = [origin stringValue];
+    NSString *converted = [self convert:(NSString *) candidate];
 
-    [result setStringValue:roman];
+    [result setStringValue:converted];
 }
 
 - (NSString *)convert:(NSString *)candidate
@@ -132,8 +131,6 @@ const static NSDictionary *THE_MAP;
         {
             [arabic addObject: segment];
         }
-        
-        NSLog(@"%@", arabic);
     }
     
     NSInteger total = 0;

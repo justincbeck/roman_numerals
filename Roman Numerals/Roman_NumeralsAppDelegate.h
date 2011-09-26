@@ -16,6 +16,7 @@
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSTextField *origin;
 @property (assign) IBOutlet NSTextField *result;
 
 - (IBAction)buttonPressed:(id)sender;
