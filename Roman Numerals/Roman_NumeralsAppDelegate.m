@@ -36,9 +36,9 @@ const static NSDictionary *THE_MAP;
 - (IBAction)buttonPressed:(id)sender
 {
     NSString *arabic = [self convert:(NSString *) @"MCMLXXII"];
-    NSLog(@"%@", arabic); // Should be 1972
+    NSLog(@"%ld", [arabic integerValue]);
     NSString *roman = [self convert:(NSString *) @"1972"];
-    NSLog(@"%@", roman); // Should be MCMLXXII
+    NSLog(@"%@", roman); // Should be MCMLXXII but is MMCXXLLII
 
     [result setStringValue:roman];
 }
@@ -105,41 +105,45 @@ const static NSDictionary *THE_MAP;
 - (NSString *)toArabic:(NSString *)roman
 {
     NSMutableArray *arabic = [[NSMutableArray alloc] init];
-    NSString *upperRoman = [self upCase: roman];
-    NSUInteger length = [upperRoman length];
     NSMutableArray *segments = [[NSMutableArray alloc] init];
+    NSString *upperRoman = [self upCase: roman];
+    NSInteger length = [upperRoman length];
     
-    for (NSUInteger i = 0; i < length; i++) {
+    for (NSInteger i = 0; i < length; i++) {
         unichar character = [upperRoman characterAtIndex:i];
         NSMutableString *tempString = [[NSMutableString alloc] init];
-        [tempString appendFormat:@"%C",character];
+        [tempString appendFormat:@"%c",character];
         NSString *num = [THE_MAP objectForKey:tempString];
         [segments addObject: num];
     }
     
-    NSEnumerator *e = [segments objectEnumerator];
-    id object;
-    while (object = [e nextObject])
+    NSEnumerator *segEnum = [segments objectEnumerator];
+    id segment;
+    while (segment = [segEnum nextObject])
     {
-        if ([arabic count] > 0 && [arabic lastObject] < object)
+        NSInteger value = [segment integerValue];
+        if ([arabic count] > 0 && [[arabic lastObject] integerValue] < value)
         {
-            NSInteger sum = [object integerValue] - [[arabic lastObject] integerValue];
+            NSInteger sum = value - [[arabic lastObject] integerValue];
             NSInteger index = [arabic indexOfObject:[arabic lastObject]];
-            [arabic insertObject: [NSNumber numberWithInteger:sum] atIndex:index];
+            [arabic replaceObjectAtIndex:index withObject:[NSNumber numberWithInteger:sum]];
         }
         else
         {
-            [arabic addObject: object];
+            [arabic addObject: segment];
         }
+        
+        NSLog(@"%@", arabic);
     }
     
-    NSInteger *total = 0;
-    e = [arabic objectEnumerator]; 
-    while (object = [e nextObject])
+    NSInteger total = 0;
+    NSEnumerator *arabEnum = [arabic objectEnumerator];
+    id arab;
+    while (arab = [arabEnum nextObject])
     {
-        total += [object integerValue];
+        total += [arab integerValue];
     }
-
+    
     return [NSString stringWithFormat:@"%d", total];
 }
 
