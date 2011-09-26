@@ -73,6 +73,7 @@ const static NSDictionary *THE_MAP;
 - (NSString *)toRoman:(NSString *)arabic
 {
     NSString *candidate = [self reverseString:arabic];
+    NSMutableArray *romanArray = [[NSMutableArray alloc] init];
     NSMutableString *roman = [[NSMutableString alloc] init];
     NSUInteger length = [candidate length];
     
@@ -84,20 +85,21 @@ const static NSDictionary *THE_MAP;
         switch(sum)
         {
             case 10:
-                [roman appendString:[self constructSegment:character: ONE]];
+                [romanArray addObject:[self constructSegment:character: ONE]];
                 break;
             case 100:
-                [roman appendString:[self constructSegment:character: TEN]];
+                [romanArray addObject:[self constructSegment:character: TEN]];
                 break;
             case 1000:
-                [roman appendString:[self constructSegment:character: HUNDRED]];
+                [romanArray addObject:[self constructSegment:character: HUNDRED]];
                 break;
             case 10000:
-                [roman appendString:[self constructSegment:character: THOUSAND]];
+                [romanArray addObject:[self constructSegment:character: THOUSAND]];
                 break;
         }
     }
-
+    
+    // TODO: I need to reverse the array and then concatonate it into a string
     return [self reverseString:roman];
 }
 
