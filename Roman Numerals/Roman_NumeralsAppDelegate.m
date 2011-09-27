@@ -99,8 +99,13 @@ const static NSDictionary *THE_MAP;
         }
     }
     
-    // TODO: I need to reverse the array and then concatonate it into a string
-    return [self reverseString:roman];
+    NSEnumerator *romanEnum = [romanArray reverseObjectEnumerator];
+    id segment;
+    while (segment = [romanEnum nextObject]) {
+        [roman appendString:segment];
+    }
+    
+    return roman;
 }
 
 - (NSString *)toArabic:(NSString *)roman
