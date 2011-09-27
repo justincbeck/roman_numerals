@@ -36,17 +36,17 @@
 		98641F34142D151700757E24 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		98641F35142D151700757E24 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		98641F36142D151700757E24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		98641F39142D151700757E24 /* Roman Numerals-Info.plist */ = {isa = PBXFileReference; path = "Roman Numerals-Info.plist"; sourceTree = "<group>"; };
+		98641F39142D151700757E24 /* Roman Numerals-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Roman Numerals-Info.plist"; sourceTree = "<group>"; };
 		98641F3B142D151700757E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98641F3D142D151700757E24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		98641F3F142D151700757E24 /* Roman Numerals-Prefix.pch */ = {isa = PBXFileReference; path = "Roman Numerals-Prefix.pch"; sourceTree = "<group>"; };
+		98641F3F142D151700757E24 /* Roman Numerals-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Roman Numerals-Prefix.pch"; sourceTree = "<group>"; };
 		98641F41142D151700757E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		98641F43142D151700757E24 /* Roman_NumeralsAppDelegate.h */ = {isa = PBXFileReference; path = Roman_NumeralsAppDelegate.h; sourceTree = "<group>"; };
+		98641F43142D151700757E24 /* Roman_NumeralsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Roman_NumeralsAppDelegate.h; sourceTree = "<group>"; };
 		98641F44142D151700757E24 /* Roman_NumeralsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Roman_NumeralsAppDelegate.m; sourceTree = "<group>"; };
 		98641F47142D151700757E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		98641F4E142D151700757E24 /* Roman NumeralsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roman NumeralsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98641F4F142D151700757E24 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		98641F56142D151700757E24 /* Roman NumeralsTests-Info.plist */ = {isa = PBXFileReference; path = "Roman NumeralsTests-Info.plist"; sourceTree = "<group>"; };
+		98641F56142D151700757E24 /* Roman NumeralsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Roman NumeralsTests-Info.plist"; sourceTree = "<group>"; };
 		98641F58142D151700757E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98641F5A142D151700757E24 /* Roman_NumeralsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Roman_NumeralsTests.h; sourceTree = "<group>"; };
 		98641F5C142D151700757E24 /* Roman_NumeralsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Roman_NumeralsTests.m; sourceTree = "<group>"; };
@@ -369,6 +369,7 @@
 		98641F61142D151700757E24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Roman Numerals/Roman Numerals-Prefix.pch";
 				INFOPLIST_FILE = "Roman Numerals/Roman Numerals-Info.plist";
@@ -380,6 +381,7 @@
 		98641F62142D151700757E24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Roman Numerals/Roman Numerals-Prefix.pch";
 				INFOPLIST_FILE = "Roman Numerals/Roman Numerals-Info.plist";
